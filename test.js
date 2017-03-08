@@ -1,5 +1,5 @@
 var builder=require("./main");
-builder.publish({
+builder.develop({
     // basePath: "/Users/wangjinliang/caplr/topolr-blog/front/src/",
     // basePath: "/Users/wangjinliang/caplr/topolr-doc/app/src/",
     basePath:"G:/caplr/topolr-doc/app/src/",
