@@ -1,10 +1,10 @@
 {
   "name": "topolr-builter",
   "description": "build the projects which develop by the topolr web framework.",
-  "version": "0.6.0",
+  "version": "1.0.0",
   "main": "./main.js",
   "author": {
-    "name": "hou80houzhu",
+    "name": "WangJinliang(hou80houzhu)",
     "email": "hou80houzhu@vip.qq.com"
   },
   "keywords": [
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/hou80houzhu/brightbuilder"
+    "url": "https://github.com/topolr/topolr-builter.git"
   },
   "scripts": {
     "start": "node bin/cli.js"
@@ -25,9 +25,9 @@
     "type": "MIT"
   },
   "bugs": {
-    "url": "https://github.com/hou80houzhu/brightbuilder/issues"
+    "url": "https://github.com/topolr/topolr-builter/issues"
   },
-  "homepage": "https://github.com/hou80houzhu/brightbuilder#readme",
+  "homepage": "http://topolr.org",
   "dependencies": {
     "autoprefixer": "^6.5.1",
     "babel-core": "^6.18.2",
@@ -42,7 +42,7 @@
     "node-sass": "^3.10.1",
     "postcss": "^5.2.5",
     "socket.io": "^1.7.2",
-    "topolr-util": "^0.1.17",
+    "topolr-util": "^1.0.0",
     "uglify-js": "~2.5.0",
     "uglifycss": "^0.0.25"
   },
