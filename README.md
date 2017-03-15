@@ -1,6 +1,10 @@
-![topolr-builter](https://github.com/topolr/topolr-builter/raw/master/logo.png)
+topolr-builter
+---------------------------
 [![Build Status](https://travis-ci.org/topolr/topolr-builter.svg?branch=master)](https://travis-ci.org/topolr/topolr-builter)
-
+[![npm version](https://badge.fury.io/js/topolr-builter.svg)](https://badge.fury.io/js/topolr-builter)
+[![npm](https://img.shields.io/npm/dt/topolr-builter.svg?maxAge=2592000)](https://www.npmjs.com/package/topolr-builter)
+[![license](https://img.shields.io/github/license/GPMDP/topolr-builter.svg?maxAge=2592000)](https://github.com/GPMDP/topolr-builter/blob/master/LICENSE)
+![status](https://img.shields.io/badge/Status-%20Ready%20for%20Awesome-red.svg)
 [![NPM](https://nodei.co/npm/topolr-builter.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/topolr-builter/)
 
 build the projects which develop by the topolr web framework.
