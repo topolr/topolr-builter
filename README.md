@@ -1,4 +1,4 @@
-topolr-builter
+![topolr-builter](https://github.com/topolr/topolr-builter/raw/master/logo.png) topolr-builter
 ---------------------------
 [![Build Status](https://travis-ci.org/topolr/topolr-builter.svg?branch=master)](https://travis-ci.org/topolr/topolr-builter)
 [![npm version](https://badge.fury.io/js/topolr-builter.svg)](https://badge.fury.io/js/topolr-builter)
