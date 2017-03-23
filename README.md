@@ -1,6 +1,8 @@
 ![topolr-builter](https://github.com/topolr/topolr-builter/raw/master/logo.png)
 ---------------------------
 [![Build Status](https://travis-ci.org/topolr/topolr-builter.svg?branch=master)](https://travis-ci.org/topolr/topolr-builter)
+[![npm version](https://badge.fury.io/js/topolr-builter.svg)](https://badge.fury.io/js/topolr-builter)
+[![npm](https://img.shields.io/npm/dt/topolr-builter.svg?maxAge=2592000)](https://www.npmjs.com/package/topolr-builter)
 [![license](https://img.shields.io/github/license/topolr/topolr-builter.svg?maxAge=2592000)](https://github.com/topolr/topolr-builter/blob/master/LICENSE)
 
 build the projects which develop by the topolr web framework.
