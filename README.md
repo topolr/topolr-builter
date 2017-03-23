@@ -4,7 +4,6 @@
 [![npm version](https://badge.fury.io/js/topolr-builter.svg)](https://badge.fury.io/js/topolr-builter)
 [![npm](https://img.shields.io/npm/dt/topolr-builter.svg?maxAge=2592000)](https://www.npmjs.com/package/topolr-builter)
 [![license](https://img.shields.io/github/license/topolr/topolr-builter.svg?maxAge=2592000)](https://github.com/topolr/topolr-builter/blob/master/LICENSE)
-![status](https://img.shields.io/badge/Status-%20Ready%20for%20Awesome-red.svg)
 
 build the projects which develop by the topolr web framework.
 
