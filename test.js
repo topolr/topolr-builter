@@ -2,7 +2,7 @@ var builder=require("./main");
 builder.develop({
     // basePath: "/Users/wangjinliang/caplr/topolr-blog/front/src/",
     // basePath: "/Users/wangjinliang/caplr/topolr-doc/app/src/",
-    basePath:"G:/git/topolr-blog/app/src/",
+    basePath:"/Users/wangjinliang/git/topolr-blog/app/src/",
     // basePath:"G:/caplr/simplemd/app/src/",
     bootPacket:"option.root",
     bootFolder:"option/",
