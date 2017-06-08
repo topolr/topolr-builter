@@ -186,9 +186,11 @@ module.exports = {
                     topolr.file(sourcePath).scan(function (path,isfile) {
                         if(isfile){
                             queue.add(function (a,info) {
-                                topolr.file(info.original).copyTo(info.newpath).then(function () {
-                                    queue.next();
-                                });
+                                if(!topolr.file(info.newpath).isExists()) {
+                                    topolr.file(info.original).copyTo(info.newpath).then(function () {
+                                        queue.next();
+                                    });
+                                }
                             },function () {
                                 this.next();
                             },{
