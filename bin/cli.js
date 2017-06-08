@@ -3,7 +3,7 @@ var topolr=require("topolr-util");
 var commander=topolr.commander();
 var util=require("./../lib/util");
 commander.onbefore(function (a) {
-    if(["build","develop"].indexOf(a)!==-1) {
+    if(["build","develop","override"].indexOf(a)!==-1) {
         var t = topolr.file(process.cwd() + "/topolr-builter-config.js");
         var config = {};
         if (t.isExists()) {
@@ -21,9 +21,10 @@ commander.onbefore(function (a) {
 });
 [
     require("./cmd/version"),
-    require("./cmd/build"),
+    require("./cmd/init"),
     require("./cmd/develop"),
-    require("./cmd/init")
+    require("./cmd/override"),
+    require("./cmd/build")
 ].forEach(function (a) {
     var command=a.command, desc=a.desc, paras=a.paras, fn=a.fn;
     commander.bind(command,desc,paras,fn);
