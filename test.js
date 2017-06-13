@@ -1,8 +1,8 @@
 var builder=require("./main");
 builder.develop({
-    basePath:"/Users/wangjinliang/git/topolr/app/src/",
+    basePath:"G:/ubroad/ubroad/app/src/",
     bootPacket:"option.root",
-    bootFolder:"option/",
+    bootFolder:"page/",
     maker:{
         etest:function(content,option,done){
             done(content);
