@@ -10,13 +10,12 @@ if(!window.document.getElementById("t-icon-default-style")){
     document.getElementsByTagName("head")[0].appendChild(_a);
 }
 if(window.document.querySelectorAll("[packet='icon.##NAME##']").length===0){
-    var con=window.document.getElementsByClassName("t-icon-svgs");
+    var con=window.document.getElementsByClassName("t-icon-svgs"),_a=window.document.createElement("div");
     if(con.length===0){
         con=window.document.createElement("div");
         con.setAttribute("class","t-icon-svgs");
         window.document.body.appendChild(con);
     }
-    var _a=window.document.createElement("div");
     _a.innerHTML=##SVGCONTENT##;
     con.appendChild(_a.childNodes[0]);
 }
