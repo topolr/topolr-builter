@@ -1,9 +1,9 @@
 var builder=require("./main");
 builder.develop({
-    cwd:"G:/ubroad/ubroad",
-    basePath:"G:/ubroad/ubroad/app/src/",
+    cwd:"G:/git/topolr",
+    basePath:"G:/git/topolr/app/src/",
     bootPacket:"option.root",
-    bootFolder:"page/",
+    bootFolder:"option/",
     maker:{
         etest:function(content,option,done){
             done(content);
