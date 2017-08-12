@@ -15,6 +15,8 @@ if(window.document.querySelectorAll("[packet='icon.##NAME##']").length===0){
         con=window.document.createElement("div");
         con.setAttribute("class","t-icon-svgs");
         window.document.body.appendChild(con);
+    }else{
+        con=con[0];
     }
     _a.innerHTML=##SVGCONTENT##;
     con.appendChild(_a.childNodes[0]);
