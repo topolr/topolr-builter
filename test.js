@@ -1,9 +1,9 @@
 var builder=require("./main");
 builder.develop({
-    cwd:"/Users/wangjinliang/git/topolr-module-sdata/",
-    basePath:"/Users/wangjinliang/git/topolr-module-sdata/com/topolr/",
-    bootPacket:"sdata.test",
-    bootFolder:"sdata",
+    cwd:"/Users/wangjinliang/ubroad/ubroad",
+    basePath:"/Users/wangjinliang/ubroad/ubroad/app/src/",
+    bootPacket:"option.root",
+    bootFolder:"page/",
     maker:{
         etest:function(content,option,done){
             done(content);
