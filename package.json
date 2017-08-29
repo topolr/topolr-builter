@@ -1,7 +1,7 @@
 {
   "name": "topolr-builter",
   "description": "build the projects which develop by the topolr web framework.",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "main": "./main.js",
   "author": {
     "name": "WangJinliang(hou80houzhu)",
