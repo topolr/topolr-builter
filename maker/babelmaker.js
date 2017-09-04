@@ -4,11 +4,12 @@ module.exports=function (content,option,fn) {
     var bile=this;
     try{
         var _path=topolr.cpath.getRelativePath(__dirname+"/","./../node_modules/");
-        var result=babel.transform(content,{
+        var result=babel.transform(content,topolr.extend(true,{
             presets: [
                 _path+"babel-preset-es2015",
-                _path+"babel-preset-stage-2"]
-        });
+                _path+"babel-preset-stage-2"
+            ]
+        },option));
         fn(result.code.substring(13));
     }catch(e){
         bile.setMakeErrorMessage(e.stack);

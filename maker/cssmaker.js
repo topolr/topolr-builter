@@ -1,27 +1,28 @@
 var uglifycss = require("uglifycss");
-module.exports=function (content,option,fn) {
-    var r=content,ths=this,bile=this;
-    try{
-        if(!this.getBilesContainer().isDebug()){
-            r=this.util.path.replacePaths(r,function (path) {
-                var a=ths.util.path.getRelativePath(bile.getPath(),path);
-                var pn=ths.util.path.getPacketName(ths.getBilesContainer().getBasePath(),a);
-                var bb=ths.getBilesContainer().getBile(pn);
-                var a=path.split("/");
-                var b=a.pop().split(".");
-                if(bb){
-                    return a.join("/")+"/"+bb.getHash()+"."+b[1];
-                }else{
-                    bile.setMakeWarnMessage("bile can not find of "+pn);
+var topolr = require("topolr-util");
+module.exports = function (content, option, fn) {
+    var r = content, ths = this, bile = this;
+    try {
+        if (!this.getBilesContainer().isDebug()) {
+            r = this.util.path.replacePaths(r, function (path) {
+                var a = ths.util.path.getRelativePath(bile.getPath(), path);
+                var pn = ths.util.path.getPacketName(ths.getBilesContainer().getBasePath(), a);
+                var bb = ths.getBilesContainer().getBile(pn);
+                var a = path.split("/");
+                var b = a.pop().split(".");
+                if (bb) {
+                    return a.join("/") + "/" + bb.getHash() + "." + b[1];
+                } else {
+                    bile.setMakeWarnMessage("bile can not find of " + pn);
                     return path;
                 }
             });
-            r=uglifycss.processString(r, {
+            r = uglifycss.processString(r, topolr.extend(true, {
                 uglyComments: true,
                 cuteComments: true
-            });
+            }, option));
         }
-    }catch(e){
+    } catch (e) {
         bile.setMakeErrorMessage(e.stack);
     }
     fn(r);

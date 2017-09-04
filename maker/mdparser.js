@@ -1,7 +1,8 @@
-module.exports=function (content,option,fn) {
-    var bile=this;
+var topolr = require("topolr-util");
+module.exports = function (content, option, fn) {
+    var bile = this;
     var marked = require('marked');
-    marked.setOptions({
+    marked.setOptions(topolr.extend(true, {
         renderer: new marked.Renderer(),
         gfm: true,
         tables: true,
@@ -10,12 +11,12 @@ module.exports=function (content,option,fn) {
         sanitize: false,
         smartLists: true,
         smartypants: false
-    });
+    }, option));
     marked(content, function (err, r) {
-        if (err){
+        if (err) {
             bile.setMakeErrorMessage(err.stack);
             fn(content);
-        }else{
+        } else {
             fn(r);
         }
     });

@@ -1,7 +1,7 @@
 var builder=require("./main");
-builder.develop({
-    cwd:"/Users/wangjinliang/ubroad/ubroad",
-    basePath:"/Users/wangjinliang/ubroad/ubroad/app/src/",
+builder.publish({
+    cwd:"G:/ubroad/ubroad",
+    basePath:"G:/ubroad/ubroad/app/src/",
     bootPacket:"option.root",
     bootFolder:"page/",
     maker:{
@@ -9,6 +9,13 @@ builder.develop({
             done(content);
         }
     },//maker mapping
+    makerOption:{
+        jsmaker:{
+            compress:{
+                drop_console:true
+            }
+        }
+    },
     ignore:["a/a.js"],
     develop:{
         output:"../dist/",

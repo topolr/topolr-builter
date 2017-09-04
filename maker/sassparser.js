@@ -1,14 +1,14 @@
-var topolr=require("topolr-util");
-module.exports = function (content,option,fn) {
-    var bile=this;
+var topolr = require("topolr-util");
+module.exports = function (content, option, fn) {
+    var bile = this;
     var sass = require('node-sass');
-    sass.render({
-        file:bile.getPath(),
+    sass.render(topolr.extend(true, {
+        file: bile.getPath(),
         sourceMap: true
-    }, function (err, result) {
-        if(!err){
+    }, option), function (err, result) {
+        if (!err) {
             fn(result.css.toString());
-        }else{
+        } else {
             bile.setMakeErrorMessage(err.stack);
             fn(content);
         }
